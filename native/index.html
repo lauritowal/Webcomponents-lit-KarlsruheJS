@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Example 90s</title>
+
+  <style>
+    body {
+      background: #fed55f;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    my-90button {
+      margin: 0 auto;
+      --button-width: 8em;
+      margin-bottom: 1em;
+
+    }
+
+    my-collapsible {
+      width: 100%;
+    }
+  </style>
+  <script src="my-90button.js" type="module"></script>
+  <script src="my-collapsible.js" type="module"></script>
+</head>
+
+<body>
+  <h1>WELCOME to my 90s website !!1! </h1>
+
+  <hr />
+
+  <my-90button>Click me!</my-90button>
+
+  <my-90button disabled>Disabled ='(</my-90button>
+
+  <hr />
+
+  <my-collapsible>
+    <div slot="title">Toggle</div>
+    <div>
+      <img src="img/furby.gif" />
+      <h2 style="color: green;"> >>>This is some beautiful text!</h2>
+    </div>
+  </my-collapsible>
+
+  <script>
+    document.querySelector("my-90button").addEventListener("click", function (event) {
+      alert("Hello!");
+    });
+  </script>
+
+</body>
+
+</html>
